@@ -38,10 +38,16 @@ Je kunt ook de website http://bboxfinder.com/ gebruiken (er is geen https), zoom
 
 - [ ] In de terminal: maak een directory 'assets' en ga daarin. Maak vervolgens daar het bestand `wageningen.pmtiles`:
 
-```
+```bash
 mkdir assets
 cd assets
 pmtiles extract <laatste PMTiles URL> wageningen.pmtiles --minzoom=10 --maxzoom=16 --bbox=<antwoord van stap 1>
+```
+
+Het volledige command is dan:
+
+```bash
+pmtiles extract https://build.protomaps.com/20250629.pmtiles wageningen.pmtiles --minzoom=10 --maxzoom=16 --bbox=5.6058239,51.9364055,5.7243627,52.0007083
 ```
 
 ---
